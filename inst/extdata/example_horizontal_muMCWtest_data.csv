@@ -1,0 +1,7 @@
+contrast,contrast_trait,element_ID,element_chr,element_start,element_end,condition_a,condition_b,a.1,a.2,a.3,a.4,a.5,b.1,b.2,b.3,b.4,b.5
+I,trait_a,x1,1,1000,2000,AAAA,BBBB,91,56,65,63,23,17,57,,39,30
+I,trait_a,x2,1,5000,5500,AAAA,BBBB,96,45,42,29,12,25,36,28,79,82
+I,trait_a,x3,1,90000,100000,AAAA,BBBB,77,98,31,93,34,34,97,77,53,11
+II,trait_b,x1,1,1000,2000,AAAA,BBBB,54,23,59,28,52,90,92,91,50,68
+II,trait_b,x2,1,5000,5500,AAAA,BBBB,37,5,18,26,11,48,84,62,86,53
+II,trait_b,x3,1,90000,100000,AAAA,BBBB,28,35,43,13,6,60,71,77,89,97

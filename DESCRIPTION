@@ -1,0 +1,30 @@
+Package: MCWtests
+Title: A suite of Monte Carlo-Wilcoxon tests
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Carlos", "Diaz-Castillo", , "diazcas@ucsc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5099-3619")),
+    person("Raquel", "Chamorro-Garcia", , "rchamorr@ucsc.edu", role = "aut",
+           comment = c(ORCID = "0000-0001-9235-9499"))
+  )
+Description: Monte Carlo-Wilcoxon (MCW) tests assess the significance of
+    the difference between two sets of quantitative data by computing the
+    sums of ranks (Wilcoxon) for the dataset under examination before and
+    after repeatedly rearranging it (Monte Carlo). This package offers the
+    ability to execute four different MCW tests, each with unique data
+    structures and specific questions to address.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Suggests: 
+    DiagrammeR,
+    ggplot2,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: 
+    data.table,
+    pbapply,
+    Zseq

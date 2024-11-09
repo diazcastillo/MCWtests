@@ -1,0 +1,5 @@
+contrast,condition_a,condition_b,N,test_type,BI_type,condition_contrast,observed_BI,expected_by_chance_BI_N,pupper,plower
+I,AAAA,BBBB,10,approximated,muMCW_BI,AAAA-BBBB,0.218181818181818,200,0.285,0.725
+I,AAAA,BBBB,10,approximated,muMCW_BI,BBBB-AAAA,-0.218181818181818,200,0.725,0.285
+II,AAAA,BBBB,10,approximated,muMCW_BI,AAAA-BBBB,-0.945454545454546,200,1,0
+II,AAAA,BBBB,10,approximated,muMCW_BI,BBBB-AAAA,0.945454545454546,200,0,1

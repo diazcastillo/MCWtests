@@ -1,0 +1,16 @@
+contrast,contrast_trait,bias_measure,condition_contrast,subset_type,tested_subset,N,n,test_type,BI_type,observed_BI,expected_by_chance_BI_N,pupper,plower
+I,trait_a,uMCW_BI,AAAA-BBBB,wholeset,none,10,10,approximated,bMCW_wBI,-0.163636363636364,200,0.435,0.645
+II,trait_b,uMCW_BI,AAAA-BBBB,wholeset,none,10,10,approximated,bMCW_wBI,0.854545454545455,200,0.05,0.965
+III,trait_c,uMCW_BI,AAAA-BBBB,wholeset,none,10,10,approximated,bMCW_wBI,0.236363636363636,200,0.09,0.925
+I,trait_a,uMCW_BI,AAAA-BBBB,subset_chr,chr1,10,3,exact,bMCW_sBI,0.444444444444444,120,0.075,0.941666666666667
+I,trait_a,uMCW_BI,AAAA-BBBB,subset_chr,chr2,10,3,exact,bMCW_sBI,-0.259259259259259,120,0.7,0.333333333333333
+I,trait_a,uMCW_BI,AAAA-BBBB,subset_chr,chrX,10,3,exact,bMCW_sBI,-0.555555555555556,120,0.9,0.125
+I,trait_a,uMCW_BI,AAAA-BBBB,subset_chr,chrY,10,1,exact,bMCW_sBI,0.1,10,0.4,0.7
+II,trait_b,uMCW_BI,AAAA-BBBB,subset_chr,chr1,10,3,exact,bMCW_sBI,0.444444444444444,120,0.658333333333333,0.4
+II,trait_b,uMCW_BI,AAAA-BBBB,subset_chr,chr2,10,3,exact,bMCW_sBI,0.777777777777778,120,0.175,0.875
+II,trait_b,uMCW_BI,AAAA-BBBB,subset_chr,chrX,10,3,exact,bMCW_sBI,0.62962962962963,120,0.366666666666667,0.683333333333333
+II,trait_b,uMCW_BI,AAAA-BBBB,subset_chr,chrY,10,1,exact,bMCW_sBI,-0.3,10,1,0.1
+III,trait_c,uMCW_BI,AAAA-BBBB,subset_chr,chr1,10,3,exact,bMCW_sBI,1,120,0.00833333333333333,1
+III,trait_c,uMCW_BI,AAAA-BBBB,subset_chr,chr2,10,3,exact,bMCW_sBI,0.148148148148148,120,0.483333333333333,0.558333333333333
+III,trait_c,uMCW_BI,AAAA-BBBB,subset_chr,chrX,10,3,exact,bMCW_sBI,-0.481481481481482,120,0.966666666666667,0.0416666666666667
+III,trait_c,uMCW_BI,AAAA-BBBB,subset_chr,chrY,10,1,exact,bMCW_sBI,-0.5,10,0.9,0.2
