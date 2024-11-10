@@ -8,9 +8,9 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-9235-9499"))
   )
 Description: Monte Carlo-Wilcoxon (MCW) tests assess the significance of
-    the difference between two sets of quantitative data by computing the
+    the difference between two sets of quantitative data by calculating
     sums of ranks (Wilcoxon) for the dataset under examination before and
-    after repeatedly rearranging it (Monte Carlo). This package offers the
+    after rearranging it multiple times (Monte Carlo). This package offers the
     ability to execute four different MCW tests, each with unique data
     structures and specific questions to address.
 License: MIT + file LICENSE

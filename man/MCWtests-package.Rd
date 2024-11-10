@@ -6,7 +6,15 @@
 \alias{MCWtests-package}
 \title{MCWtests: A suite of Monte Carlo-Wilcoxon tests}
 \description{
-Monte Carlo-Wilcoxon (MCW) tests assess the significance of the difference between two sets of quantitative data by computing the sums of ranks (Wilcoxon) for the dataset under examination before and after repeatedly rearranging it (Monte Carlo). This package offers the ability to execute four different MCW tests, each with unique data structures and specific questions to address.
+Monte Carlo-Wilcoxon (MCW) tests assess the significance of the difference between two sets of quantitative data by calculating sums of ranks (Wilcoxon) for the dataset under examination before and after rearranging it multiple times (Monte Carlo). This package offers the ability to execute four different MCW tests, each with unique data structures and specific questions to address.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/diazcastillo/MCWtests}
+  \item Report bugs at \url{https://github.com/diazcastillo/MCWtests/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Carlos Diaz-Castillo \email{diazcas@ucsc.edu} (\href{https://orcid.org/0000-0001-5099-3619}{ORCID})

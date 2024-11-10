@@ -215,14 +215,14 @@ data.table::fread(system.file("extdata", "example_vertical_uMCWtest_data.csv", p
 
 ##### Figure 1. Data structure of uMCW testing entry dataset with vertical layout
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot (data.table::fread(system.file("extdata", "example_vertical_uMCWtest_data.csv", package = "MCWtests")), aes(x = condition, y = value, fill = condition, colour = condition)) +
   geom_dotplot(binaxis = "y", stackdir = "center", dotsize = 0.7) +
   facet_grid (. ~ contrast) +
-  theme (legend.title = element_text(size = 5),
-         legend.text = element_text(size = 5),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 5))
+         axis.text.x = element_text(size = 10))
 ```
 
 ##### Table 2. Results of uMCW testing using an entry dataset with vertical layout
@@ -243,7 +243,7 @@ data.table::fread(system.file("extdata", "example_horizontal_uMCWtest_data.csv",
 
 ##### Figure 2. Data structure of uMCW testing entry dataset with horizontal layout
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot (na.omit(melt(fread(system.file("extdata", "example_horizontal_uMCWtest_data.csv", package = "MCWtests")),
                                      measure.vars = patterns("\\."),
                                      variable.name = "condition",
@@ -255,10 +255,10 @@ ggplot (na.omit(melt(fread(system.file("extdata", "example_horizontal_uMCWtest_d
         aes(x = element_ID, y = value, fill = condition, colour = condition)) +
   geom_dotplot(binaxis = "y", stackdir = "center", position = "dodge", dotsize = 0.4) +
   facet_grid (. ~ contrast) +
-  theme (legend.title = element_text(size = 5),
-         legend.text = element_text(size = 5),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 5)) +
+         axis.text.x = element_text(size = 10)) +
   labs(x = "element_ID") 
 ```
 
@@ -341,7 +341,7 @@ data.table::fread(system.file("extdata", "example_vertical_muMCWtest_data.csv", 
 
 ##### Figure 3. Data structure of muMCW testing entry dataset with vertical layout
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot(melt(na.omit(data.table::fread(system.file("extdata", "example_vertical_muMCWtest_data.csv", package = "MCWtests")))[
   , `:=`(replicate_pair, seq_len(.N)), by = contrast],
   id.vars = c("contrast", "replicate_pair"),
@@ -352,10 +352,10 @@ ggplot(melt(na.omit(data.table::fread(system.file("extdata", "example_vertical_m
   geom_dotplot(binaxis = "y", stackdir = "center", aes(colour = condition)) +
   geom_line(linewidth = 0.2, colour = "black", aes(group = replicate_pair)) +
   facet_grid(. ~ contrast) +
-  theme (legend.title = element_text(size = 5),
-         legend.text = element_text(size = 5),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 5))
+         axis.text.x = element_text(size = 10))
 ```
 
 ##### Table 6. Results of muMCW testing using an entry dataset with vertical layout
@@ -376,7 +376,7 @@ data.table::fread(system.file("extdata", "example_horizontal_muMCWtest_data.csv"
 
 ##### Figure 4. Data structure of muMCW testing entry dataset with horizontal layout
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot(melt(na.omit(dcast(melt(data.table::fread(system.file("extdata", "example_horizontal_muMCWtest_data.csv", package = "MCWtests")),
                                             measure.vars = patterns("\\."),
                                             variable.name = "condition",
@@ -394,10 +394,10 @@ ggplot(melt(na.omit(dcast(melt(data.table::fread(system.file("extdata", "example
   geom_dotplot(binaxis = "y", stackdir = "center", position = "dodge", aes(colour = condition)) +
   geom_line(linewidth = 0.2, colour = "black", aes(group = replicate_pair)) +
   facet_grid(contrast ~ element_ID, scales = "free") +
-  theme (legend.title = element_text(size = 5),
-         legend.text = element_text(size = 5),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 5))
+         axis.text.x = element_text(size = 10))
 ```
 
 ##### Table 8. Results of muMCW testing using an entry dataset with horizontal layout
@@ -482,7 +482,7 @@ data.table::fread(system.file("extdata", "example_vertical_mbMCWtest_data.csv", 
 
 ##### Figure 5. Data structure of mbMCW testing entry dataset with vertical layout
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot(melt(na.omit(data.table::fread(system.file("extdata", "example_vertical_mbMCWtest_data.csv", package = "MCWtests")))[
   , `:=`(replicate_pair, seq_len(.N)), by = contrast],
   id.vars = c("contrast", "replicate_pair", "unmatched_condition"),
@@ -493,10 +493,10 @@ ggplot(melt(na.omit(data.table::fread(system.file("extdata", "example_vertical_m
   geom_dotplot(binaxis = "y", stackdir = "center", aes(colour = unmatched_condition)) +
   geom_line(linewidth = 0.2, aes(group = replicate_pair, colour = unmatched_condition)) +
   facet_grid(. ~ contrast, scales = "free") +
-  theme (legend.title = element_text(size = 5),
-         legend.text = element_text(size = 5),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 5))
+         axis.text.x = element_text(size = 10))
 ```
 
 ##### Table 10. Results of mbMCW testing using an entry dataset with vertical layout
@@ -517,7 +517,7 @@ data.table::fread(system.file("extdata", "example_horizontal_mbMCWtest_data.csv"
 
 ##### Figure 6. Data structure of mbMCW testing entry dataset with horizontal layout
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot(melt(na.omit(dcast(melt(data.table::fread(system.file("extdata", "example_horizontal_mbMCWtest_data.csv", package = "MCWtests")),
                                             measure.vars = patterns("\\."),
                                             variable.name = "condition",
@@ -537,10 +537,10 @@ ggplot(melt(na.omit(dcast(melt(data.table::fread(system.file("extdata", "example
   geom_dotplot(binaxis = "y", stackdir = "center", aes(colour = unmatched_condition)) +
   geom_line(linewidth = 0.2, aes(group = replicate_pair, colour = unmatched_condition)) +
   facet_grid(contrast ~ element_ID, scales = "free") +
-  theme (legend.title = element_text(size = 4),
-         legend.text = element_text(size = 4),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 5))
+         axis.text.x = element_text(size = 10))
 ```
 
 ##### Table 12. Results of mbMCW testing using an entry dataset with horizontal layout
@@ -616,15 +616,15 @@ data.table::fread(system.file("extdata", "example_bMCWtest_data.csv", package = 
 
 ##### Figure 7. Data structure of bMCW testing entry dataset
 
-```{r, echo = FALSE, out.width="100%"}
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, fig.align = 'center'}
 ggplot(na.omit(data.table::fread(system.file("extdata", "example_bMCWtest_data.csv", package = "MCWtests"))), 
   aes(x = factor(element_ID, levels=unique(element_ID)), y = bias_value, fill = subset_chr)) +
   geom_dotplot(binaxis = "y", stackdir = "center", dotsize = 0.7, aes(colour = subset_chr)) +
   facet_grid(. ~ contrast, scales = "free") +
-  theme (legend.title = element_text(size = 5),
-         legend.text = element_text(size = 5),
+  theme (legend.title = element_text(size = 10),
+         legend.text = element_text(size = 10),
          legend.key.size = unit(0.2, "cm"),
-         axis.text.x = element_text(size = 4, angle = 90, hjust = 1, vjust = 0.5)) +
+         axis.text.x = element_text(size = 10, angle = 90, hjust = 1, vjust = 0.5)) +
   labs(x = "element_ID")
 ```
 
