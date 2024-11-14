@@ -66,11 +66,11 @@
 #'
 #' @examples
 #' # running mbMCWtest with an ideal vertical entry dataset
-#' path_v <- system.file("extdata", "example_mbMCWtest_vertical_data.csv", package = "MCWtests")
+#' path_v <- system.file("extdata", "example_vertical_mbMCWtest_data.csv", package = "MCWtests")
 #' mbMCWtest_v_results <- mbMCWtest(path_v, 200)
 #'
 #' # running mbMCWtest with an ideal horizontal entry dataset
-#' path_h <- system.file("extdata", "example_mbMCWtest_horizontal_data.csv", package = "MCWtests")
+#' path_h <- system.file("extdata", "example_horizontal_mbMCWtest_data.csv", package = "MCWtests")
 #' mbMCWtest_h_results <- mbMCWtest(path_h, 200)
 #'
 #' @export

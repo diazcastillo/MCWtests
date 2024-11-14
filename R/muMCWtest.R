@@ -64,11 +64,11 @@
 #'
 #' @examples
 #' # running muMCWtest with an ideal vertical entry dataset
-#' path_v <- system.file("extdata", "example_muMCWtest_vertical_data.csv", package = "MCWtests")
+#' path_v <- system.file("extdata", "example_vertical_muMCWtest_data.csv", package = "MCWtests")
 #' muMCWtest_v_results <- muMCWtest(path_v, 200)
 #'
 #' # running muMCWtest with an ideal horizontal entry dataset
-#' path_h <- system.file("extdata", "example_muMCWtest_horizontal_data.csv", package = "MCWtests")
+#' path_h <- system.file("extdata", "example_horizontal_muMCWtest_data.csv", package = "MCWtests")
 #' muMCWtest_h_results <- muMCWtest(path_h, 200)
 #'
 #' @export

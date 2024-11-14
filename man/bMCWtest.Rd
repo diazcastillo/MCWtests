@@ -59,8 +59,8 @@ The function \emph{bMCWtest} eliminates missing values (NAs) from the dataset be
 }
 }
 \examples{
-# running bMCWtest with a vertical entry dataset
-path <- system.file("extdata", "bMCWtest_example_data.csv", package = "MCWtests")
+# running bMCWtest with an ideal entry dataset
+path <- system.file("extdata", "example_bMCWtest_data.csv", package = "MCWtests")
 bMCWtest_results <- bMCWtest(path, 200)
 
 }

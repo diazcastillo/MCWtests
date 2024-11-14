@@ -71,12 +71,12 @@ The function \emph{mbMCWtest} eliminates any matched-paired measures with at lea
 }
 }
 \examples{
-# running mbMCWtest with a vertical entry dataset
-path_v <- system.file("extdata", "mbMCWtest_vertical_example_data.csv", package = "MCWtests")
+# running mbMCWtest with an ideal vertical entry dataset
+path_v <- system.file("extdata", "example_vertical_mbMCWtest_data.csv", package = "MCWtests")
 mbMCWtest_v_results <- mbMCWtest(path_v, 200)
 
-# running mbMCWtest with an horizontal entry dataset
-path_h <- system.file("extdata", "mbMCWtest_horizontal_example_data.csv", package = "MCWtests")
+# running mbMCWtest with an ideal horizontal entry dataset
+path_h <- system.file("extdata", "example_horizontal_mbMCWtest_data.csv", package = "MCWtests")
 mbMCWtest_h_results <- mbMCWtest(path_h, 200)
 
 }
