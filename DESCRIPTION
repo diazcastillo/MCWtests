@@ -1,6 +1,6 @@
 Package: MCWtests
 Title: A suite of Monte Carlo-Wilcoxon tests
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person("Carlos", "Diaz-Castillo", , "diazcas@ucsc.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5099-3619")),
