@@ -65,13 +65,22 @@
 #' @import pbapply
 #'
 #' @examples
-#' # running mbMCWtest with an ideal vertical entry dataset
-#' path_v <- system.file("extdata", "example_vertical_mbMCWtest_data.csv", package = "MCWtests")
-#' mbMCWtest_v_results <- mbMCWtest(path_v, 200)
 #'
+#' test_temp <- tempdir()
+#' extdata_v <- system.file("extdata", "example_vertical_mbMCWtest_data.csv", package = "MCWtests")
+#' file.copy(extdata_v, test_temp)
+#' extdata_h <- system.file("extdata", "example_horizontal_mbMCWtest_data.csv", package = "MCWtests")
+#' file.copy(extdata_h, test_temp)
+#' # running mbMCWtest with an ideal vertical entry dataset
+#' path_v <- file.path(test_temp, "example_vertical_mbMCWtest_data.csv")
+#' mbMCWtest_vertical_results <- mbMCWtest(path_v, 10)
+#' print(mbMCWtest_vertical_results)
 #' # running mbMCWtest with an ideal horizontal entry dataset
-#' path_h <- system.file("extdata", "example_horizontal_mbMCWtest_data.csv", package = "MCWtests")
-#' mbMCWtest_h_results <- mbMCWtest(path_h, 200)
+#' path_h <- file.path(test_temp, "example_horizontal_mbMCWtest_data.csv")
+#' mbMCWtest_horizontal_results <- mbMCWtest(path_h, 10)
+#' print(mbMCWtest_horizontal_results)
+#'
+#' rm(test_temp)
 #'
 #' @export
 mbMCWtest <- function(path, max_rearrangements) {

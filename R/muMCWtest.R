@@ -63,13 +63,21 @@
 #' @import Zseq
 #'
 #' @examples
+#' test_temp <- tempdir()
+#' extdata_v <- system.file("extdata", "example_vertical_muMCWtest_data.csv", package = "MCWtests")
+#' file.copy(extdata_v, test_temp)
+#' extdata_h <- system.file("extdata", "example_horizontal_muMCWtest_data.csv", package = "MCWtests")
+#' file.copy(extdata_h, test_temp)
 #' # running muMCWtest with an ideal vertical entry dataset
-#' path_v <- system.file("extdata", "example_vertical_muMCWtest_data.csv", package = "MCWtests")
-#' muMCWtest_v_results <- muMCWtest(path_v, 200)
-#'
+#' path_v <- file.path(test_temp, "example_vertical_muMCWtest_data.csv")
+#' muMCWtest_vertical_results <- muMCWtest(path_v, 10)
+#' print(muMCWtest_vertical_results)
 #' # running muMCWtest with an ideal horizontal entry dataset
-#' path_h <- system.file("extdata", "example_horizontal_muMCWtest_data.csv", package = "MCWtests")
-#' muMCWtest_h_results <- muMCWtest(path_h, 200)
+#' path_h <- file.path(test_temp, "example_horizontal_muMCWtest_data.csv")
+#' muMCWtest_horizontal_results <- muMCWtest(path_h, 10)
+#' print(muMCWtest_horizontal_results)
+#'
+#' rm(test_temp)
 #'
 #' @export
 muMCWtest <- function(path, max_rearrangements) {

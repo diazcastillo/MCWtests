@@ -59,8 +59,13 @@ The function \emph{bMCWtest} eliminates missing values (NAs) from the dataset be
 }
 }
 \examples{
+test_temp <- tempdir()
+extdata <- system.file("extdata", "example_bMCWtest_data.csv", package = "MCWtests")
+file.copy(exdata, test_temp)
 # running bMCWtest with an ideal entry dataset
-path <- system.file("extdata", "example_bMCWtest_data.csv", package = "MCWtests")
-bMCWtest_results <- bMCWtest(path, 200)
+path <- file.path(test_temp, "example_bMCWtest_data.csv")
+bMCWtest_results <- bMCWtest(path, 10)
+print(bMCWtest_results)
+rm(test_temp)
 
 }

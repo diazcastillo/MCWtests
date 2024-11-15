@@ -78,12 +78,20 @@ The function \emph{uMCWtest} eliminate missing values (NAs) from the dataset bef
 }
 }
 \examples{
-# Executing uMCWtest with an ideal vertical entry dataset
-path_v <- system.file("extdata", "example_vertical_uMCWtest_data.csv", package = "MCWtests")
-uMCWtest_v_results <- uMCWtest(path_v, 200)
+test_temp <- tempdir()
+extdata_v <- system.file("extdata", "example_vertical_uMCWtest_data.csv", package = "MCWtests")
+file.copy(extdata_v, test_temp)
+extdata_h <- system.file("extdata", "example_horizontal_uMCWtest_data.csv", package = "MCWtests")
+file.copy(extdata_h, test_temp)
+# running uMCWtest with an ideal vertical entry dataset
+path_v <- file.path(test_temp, "example_vertical_uMCWtest_data.csv")
+uMCWtest_vertical_results <- uMCWtest(path_v, 10)
+print(uMCWtest_vertical_results)
+# running uMCWtest with an ideal horizontal entry dataset
+path_h <- file.path(test_temp, "example_horizontal_uMCWtest_data.csv")
+uMCWtest_horizontal_results <- uMCWtest(path_h, 10)
+print(uMCWtest_horizontal_results)
 
-# Executing uMCWtest with an ideal horizontal entry dataset
-path_h <- system.file("extdata", "example_horizontal_uMCWtest_data.csv", package = "MCWtests")
-uMCWtest_h_results <- uMCWtest(path_h, 200)
+rm(test_temp)
 
 }
