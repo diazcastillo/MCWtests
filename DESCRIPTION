@@ -1,6 +1,6 @@
 Package: MCWtests
 Title: A suite of Monte Carlo-Wilcoxon tests
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
     person("Carlos", "Diaz-Castillo", , "diazcas@ucsc.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5099-3619")),
@@ -13,10 +13,10 @@ Description: Monte Carlo-Wilcoxon (MCW) tests assess the significance of
     after rearranging it multiple times (Monte Carlo). This package offers the
     ability to execute four different MCW tests, each with unique data
     structures and specific questions to address.
-License: MIT + file LICENSE
+License: GPL (>= 3) + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Suggests: 
     DiagrammeR,
     ggplot2,
@@ -30,3 +30,4 @@ Imports:
     Zseq
 URL: https://github.com/diazcastillo/MCWtests
 BugReports: https://github.com/diazcastillo/MCWtests/issues
+Config/testthat/edition: 3
