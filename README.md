@@ -6,7 +6,10 @@ You can install the development version of MCWtests from
 
 ``` r
 # install.packages("devtools")
+# install MCWtests from github repository
 devtools::install_github("diazcastillo/MCWtests")
+# install MCWtests with vignettes from github repository
+devtools::install_github("diazcastillo/MCWtests", build_vignettes = TRUE)
 ```
 
 # Introduction to MCW testing
