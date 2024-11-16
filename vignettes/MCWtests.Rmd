@@ -26,7 +26,7 @@ library(DiagrammeR)
 library(ggplot2)
 ```
 
-# 1. Introduction to MCW testing (test)
+# 1. Introduction to MCW testing
 
 Originally, Monte Carlo-Wilcoxon (MCW) tests were designed to determined whether the differences between two sets of data were significantly biased in the same direction when compared with what it would be expected by chance. MCW tests proceed by calculating sum-of-ranks-based bias indexes, hence the reference to Frank Wilcoxon who invented the non-parametric rank-sum and signed-rank tests, before and after rearranging the dataset multiple times, hence the Monte Carlo reference often associated to analytical strategies based on repeated random sampling [@díaz-castillo2013; @díaz-castillo2017; @chamorro-garcia2017; @díaz-castillo2018; @diaz-castillo2019].
 
