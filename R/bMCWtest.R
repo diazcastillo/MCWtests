@@ -56,7 +56,7 @@
 #' @examples
 #' test_temp <- tempdir()
 #' extdata <- system.file("extdata", "example_bMCWtest_data.csv", package = "MCWtests")
-#' file.copy(exdata, test_temp)
+#' file.copy(extdata, test_temp)
 #' # running bMCWtest with an ideal entry dataset
 #' path <- file.path(test_temp, "example_bMCWtest_data.csv")
 #' bMCWtest_results <- bMCWtest(path, 10)
