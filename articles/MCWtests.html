@@ -129,9 +129,27 @@ respectively.</p></li>
 </ol>
 <p>Each MCW test employs the user-provided parameter
 <em>max_rearrangements</em> to follow two alternative paths.</p>
-<pre><code>-   **MCW exact tests.** If the number of distinct rearrangements that can be generated from the dataset under analysis is less than *max_rearrangements*, MCW tests will actually generate all possible data rearrangements to create the collection of expected-by-chance BIs. In this case, *P~upper~* and *P~lower~* values will be exact estimations of the likelihood of obtaining BIs with equal or more extreme values compared to observed BIs with datasets of the same size and range but different internal structures.
-
--   **MCW approximated tests.** If the number of distinct rearrangements that can be generated from the dataset under analysis is greater than *max_rearrangements*, MCW tests will perform a specified number of random data rearrangements, equal to the value of *max_rearrangements*, to generate the collection of expected-by-chance BIs. In this case, *P~upper~* and *P~lower~* values will represent approximate estimations of the likelihood of obtaining BIs with equal or more extreme values compared to observed BIs with datasets of the same size and range but different internal structures.</code></pre>
+<ul>
+<li><p><strong>MCW exact tests.</strong> If the number of distinct
+rearrangements that can be generated from the dataset under analysis is
+less than <em>max_rearrangements</em>, MCW tests will actually generate
+all possible data rearrangements to create the collection of
+expected-by-chance BIs. In this case, <em>P<sub>upper</sub></em> and
+<em>P<sub>lower</sub></em> values will be exact estimations of the
+likelihood of obtaining BIs with equal or more extreme values compared
+to observed BIs with datasets of the same size and range but different
+internal structures.</p></li>
+<li><p><strong>MCW approximated tests.</strong> If the number of
+distinct rearrangements that can be generated from the dataset under
+analysis is greater than <em>max_rearrangements</em>, MCW tests will
+perform a specified number of random data rearrangements, equal to the
+value of <em>max_rearrangements</em>, to generate the collection of
+expected-by-chance BIs. In this case, <em>P<sub>upper</sub></em> and
+<em>P<sub>lower</sub></em> values will represent approximate estimations
+of the likelihood of obtaining BIs with equal or more extreme values
+compared to observed BIs with datasets of the same size and range but
+different internal structures.</p></li>
+</ul>
 </div>
 <div class="section level2">
 <h2 id="mcwtests-data-and-function-structure">3. MCWtests data and function structure<a class="anchor" aria-label="anchor" href="#mcwtests-data-and-function-structure"></a>
