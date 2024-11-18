@@ -7,3 +7,6 @@
 ^docs$
 ^Meta$
 ^references\.bib$
+^_pkgdown\.yml$
+^pkgdown$
+^\.github$

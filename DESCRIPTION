@@ -28,6 +28,6 @@ Imports:
     data.table,
     pbapply,
     Zseq
-URL: https://github.com/diazcastillo/MCWtests
+URL: https://github.com/diazcastillo/MCWtests, https://diazcastillo.github.io/MCWtests/
 BugReports: https://github.com/diazcastillo/MCWtests/issues
 Config/testthat/edition: 3
