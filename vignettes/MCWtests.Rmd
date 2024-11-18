@@ -13,7 +13,7 @@ csl: nature.csl
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "",
-  dev = "svg",
+  dev = "png",
   warning = FALSE,
   message = FALSE
 )
