@@ -100,8 +100,10 @@ to follow two alternative paths.
 
 # Further information
 
-Please, see xxx for detailed information about the structure of the
-*MCWtests* package, including each MCW test and examples.
+Please, see
+[**https://diazcastillo.github.io/MCWtests/**](https://diazcastillo.github.io/MCWtests/)
+for detailed information about the structure of the *MCWtests* package,
+including each MCW test and examples.
 
 # References
 

@@ -12,6 +12,7 @@ Monte Carlo-Wilcoxon (MCW) tests assess the significance of the difference betwe
 Useful links:
 \itemize{
   \item \url{https://github.com/diazcastillo/MCWtests}
+  \item \url{https://diazcastillo.github.io/MCWtests/}
   \item Report bugs at \url{https://github.com/diazcastillo/MCWtests/issues}
 }
 
